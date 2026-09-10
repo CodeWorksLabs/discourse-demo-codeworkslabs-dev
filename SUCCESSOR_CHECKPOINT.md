@@ -19,4 +19,5 @@ Run `npm ci`, `npm audit --omit=dev`, `npm run build`, and `npm run deploy:dry-r
 
 DiscussionBridge remains independently owned. This site may describe or link it but must not absorb its source, doctrine, or operational claims.
 
-The exact commit identity and completed verification evidence will be recorded here when the initial public baseline is pushed.
+Treat the checked-out \`main\` commit as the exact source identity. Verify it with
+\`git rev-parse HEAD\` and confirm it matches \`origin/main\` before release work.
