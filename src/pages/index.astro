@@ -1,16 +1,146 @@
 ---
 import "../styles.css";
 import SiteFooter from "../components/SiteFooter.astro";
+
+const releaseUrl = "https://github.com/CodeWorksLabs/brand-navigation/releases/tag/v1.0.0-rc.4";
+const headerPreview = "https://raw.githubusercontent.com/CodeWorksLabs/brand-navigation/v1.0.0-rc.4/docs/images/previews/the-bridge-header.jpg";
 ---
 
 <!doctype html>
 <html lang="en">
-    <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" /><meta name="description" content="CodeWorksLabs demonstrations for Discourse products and theme components." /><title>Discourse Demos — CodeWorksLabs</title></head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Try Brand Navigation on real Discourse forums, see header previews and find installation guides. Explore DiscussionBridge’s independent demos too." />
+    <title>Discourse Demos — CodeWorksLabs</title>
+  </head>
   <body>
-    <header><a href="https://codeworkslabs.dev/">CWL / LABS</a><div class="header-navs"><nav aria-label="Primary navigation"><a href="https://codeworkslabs.dev/products/">Products</a><a href="https://codeworkslabs.dev/platforms/">Platforms</a><a href="https://demo.codeworkslabs.dev/">Demos</a><a href="https://docs.codeworkslabs.dev/">Docs</a></nav><nav class="utility-navigation" aria-label="Help and community"><a href="https://codeworkslabs.dev/blog/">Blog</a><a href="https://codeworkslabs.dev/support/">Support</a><a href="https://forum.codeworkslabs.dev/">Forum ↗</a></nav></div></header>
-    <main><section class="hero"><p>PLATFORM / DISCOURSE</p><h1>Community interfaces,<br /><em>shown in context.</em></h1><span>CodeWorksLabs and independently operated products are presented separately, with ownership and demonstration boundaries kept explicit.</span></section><div class="demo-list"><section class="demo-card"><div><p>BRAND NAVIGATION / LIVE EXTERNAL REFERENCE</p><h2>Brand Navigation</h2><p>Brand Navigation is maintained by CodeWorksLabs. The Bridge uses it in a real publishing environment, providing a live, in-context reference—not a CodeWorksLabs-owned test environment.</p><div class="actions"><a href="https://bridge.demo.discussionbridge.dev/">Open the live reference ↗</a><a href="https://codeworkslabs.dev/products/brand-navigation/">Product overview</a><a href="https://docs.codeworkslabs.dev/brand-navigation/">Documentation</a></div></div><aside><span>Product owner</span><strong>CodeWorksLabs</strong><span>Reference environment</span><strong>The Bridge</strong><span>Environment owner</span><strong>DiscussionBridge</strong><span>What this demonstrates</span><strong>Brand Navigation working on a public Discourse forum. It is a real-world example, not a controlled test of every feature.</strong></aside></section><section class="demo-card discussionbridge"><div><p>DISCUSSIONBRIDGE / INDEPENDENT PRODUCT ECOSYSTEM</p><h2>DiscussionBridge</h2><p>DiscussionBridge is the original worked example for the CodeWorksLabs product lifecycle. Its independently operated ecosystem carries the product, documentation, demonstrations, support, release evidence, diagnostics, maintenance, and recovery work established for it.</p><div class="actions"><a href="https://discussionbridge.dev/">Visit DiscussionBridge ↗</a><a href="https://demo.discussionbridge.dev/">Explore live demos</a><a href="https://docs.discussionbridge.dev/versions-and-live-status/">Versions and live status</a></div></div><aside><span>Product owner</span><strong>DiscussionBridge</strong><span>Lifecycle role</span><strong>Original worked example</strong><span>Demonstrations</span><strong>Independent DiscussionBridge demo collection</strong><span>Documentation</span><strong>Canonical status and operational evidence remain in DiscussionBridge docs.</strong></aside></section></div><section class="promise"><span>DEMO STANDARD</span><h2>A live URL is not enough.</h2><p>Every promoted demo identifies its owner, product ref, platform build, test context, and the behaviors actually verified.</p></section></main>
+    <header>
+      <a class="wordmark" href="https://codeworkslabs.dev/" aria-label="CodeWorksLabs home"><span class="wordmark-mark" aria-hidden="true">CWL</span><span>CodeWorksLabs</span></a>
+      <div class="header-navs">
+        <nav aria-label="Primary navigation"><a href="https://codeworkslabs.dev/products/">Products</a><a href="https://codeworkslabs.dev/platforms/">Platforms</a><a href="https://demo.codeworkslabs.dev/">Demos</a><a href="https://docs.codeworkslabs.dev/">Docs</a></nav>
+        <nav class="utility-navigation" aria-label="Help and community"><a href="https://codeworkslabs.dev/blog/">Blog</a><a href="https://codeworkslabs.dev/support/">Support</a><a href="https://forum.codeworkslabs.dev/">Forum ↗</a></nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <p>Discourse demos</p>
+        <h1>Try the navigation.<br /><em>See what fits.</em></h1>
+        <span>Explore Brand Navigation on real Discourse forums. Try the menus, compare layouts and see how it could work for your community.</span>
+      </section>
+
+      <section class="demo-card brand-navigation" aria-labelledby="brand-navigation-heading">
+        <div>
+          <p class="eyebrow">Brand Navigation · Live examples</p>
+          <h2 id="brand-navigation-heading">Brand Navigation</h2>
+          <p class="description">Add your brand, useful links and dropdown menus to Discourse, with optional text links and icons in the forum’s own header.</p>
+          <div class="actions"><a href="https://forum.codeworkslabs.dev/">Open CodeWorksLabs Forum ↗</a><a href="https://bridge.demo.discussionbridge.dev/">Explore The Bridge ↗</a></div>
+          <p class="example-note">CodeWorksLabs Forum is our community. The Bridge is independently operated by DiscussionBridge. These are live examples; navigation and content may change.</p>
+          <nav class="product-links" aria-label="Brand Navigation resources">
+            <a href="https://docs.codeworkslabs.dev/brand-navigation/install/">Install</a>
+            <a href={releaseUrl}>RC4 download</a>
+            <a href="https://codeworkslabs.dev/products/brand-navigation/">Product overview</a>
+            <a href="https://docs.codeworkslabs.dev/brand-navigation/">Documentation</a>
+            <a href="https://forum.codeworkslabs.dev/c/brand-navigation/support/7">Support</a>
+            <a href="https://forum.codeworkslabs.dev/t/brand-navigation-roadmap/14">Roadmap</a>
+          </nav>
+        </div>
+        <aside aria-labelledby="try-heading">
+          <h3 id="try-heading">What to try</h3>
+          <ul>
+            <li>On CodeWorksLabs Forum, open <strong>Products</strong> to explore a dropdown menu.</li>
+            <li>Follow text links and social icons in the navigation bar and forum header.</li>
+            <li>Compare the layout on desktop and a phone, or rotate your phone.</li>
+          </ul>
+          <p>Each forum has its own configuration—not every option is demonstrated on every site.</p>
+          <a class="release-link" href={releaseUrl}>Available download: v1.0.0-rc.4 →</a>
+        </aside>
+      </section>
+
+      <section class="preview" aria-labelledby="preview-heading">
+        <div class="preview-heading"><h2 id="preview-heading">A look at The Bridge</h2><a href="https://bridge.demo.discussionbridge.dev/">Visit the live forum ↗</a></div>
+        <a class="header-preview" href={headerPreview} target="_blank" rel="noopener noreferrer" aria-label="Enlarge The Bridge header screenshot (opens in a new tab)">
+          <img src={headerPreview} alt="The Bridge showing Brand Navigation’s publishing dropdown menus, a Versions & Status text link and social icons in the forum header." width="1665" height="101" loading="lazy" />
+        </a>
+        <p>Desktop view, captured while signed in. Select the image to enlarge it in a new tab.</p>
+        <a class="more-previews" href="https://codeworkslabs.dev/products/brand-navigation/#previews">See more header examples and settings previews →</a>
+      </section>
+
+      <section class="demo-card discussionbridge" aria-labelledby="discussionbridge-heading">
+        <div>
+          <p class="eyebrow">DiscussionBridge · Independent product</p>
+          <h2 id="discussionbridge-heading">DiscussionBridge</h2>
+          <p class="description">DiscussionBridge is independently owned and operated. Explore its demos, documentation and community on its own sites.</p>
+          <div class="actions"><a href="https://demo.discussionbridge.dev/">Explore DiscussionBridge demos ↗</a><a href="https://discussionbridge.dev/">Visit DiscussionBridge ↗</a></div>
+          <nav class="product-links" aria-label="DiscussionBridge resources"><a href="https://docs.discussionbridge.dev/">Documentation</a><a href="https://docs.discussionbridge.dev/versions-and-live-status/">Versions and live status</a></nav>
+        </div>
+        <aside>
+          <h3>DiscussionBridge questions?</h3>
+          <p>Use its own community for support, feature requests and discussion.</p>
+          <a class="release-link" href="https://forum.discussionbridge.dev/">DiscussionBridge Forum →</a>
+        </aside>
+      </section>
+
+      <section class="promise">
+        <span>Getting started</span>
+        <h2>Like what you see?</h2>
+        <p>Try Brand Navigation on a staging theme first, then configure it for your community. <a href="https://docs.codeworkslabs.dev/brand-navigation/install/">Follow the installation guide →</a></p>
+      </section>
+    </main>
     <SiteFooter />
   </body>
 </html>
 
-<style>header nav,.header-navs{display:flex;align-items:center;gap:1.5rem}.utility-navigation{gap:.55rem}.utility-navigation a{padding:.42rem .62rem;border:1px solid var(--line);color:var(--cyan)}.utility-navigation a:last-child{border-color:rgba(255,107,87,.55);color:var(--coral)}.demo-list{display:grid;gap:2rem}.demo-list .demo-card{margin-bottom:0}.demo-list .discussionbridge{margin-bottom:7rem}.discussionbridge>div>p:first-child{color:var(--coral)}@media(max-width:760px){header{gap:1rem;flex-wrap:wrap}.header-navs{width:100%;flex-wrap:wrap;gap:.75rem}.header-navs nav:first-child{width:100%;gap:.75rem;justify-content:space-between}.utility-navigation{gap:.55rem}.demo-list .discussionbridge{margin-bottom:5rem}}</style>
+<style>
+  header { align-items: center; gap: 2rem; }
+  .wordmark { display: inline-flex; align-items: center; gap: .85rem; flex-shrink: 0; font-size: 1rem; letter-spacing: -.02em; }
+  .wordmark-mark { display: grid; place-items: center; width: 2.35rem; height: 2.1rem; background: var(--coral); color: #080d1b; font-size: .62rem; letter-spacing: .045em; transform: rotate(-4deg); }
+  header nav, .header-navs { display: flex; align-items: center; gap: 1.5rem; }
+  .utility-navigation { gap: .55rem; }
+  .utility-navigation a { padding: .42rem .62rem; border: 1px solid var(--line); color: var(--cyan); }
+  .utility-navigation a:last-child { border-color: rgba(255,107,87,.55); color: var(--coral); }
+  .hero > p, .eyebrow, .promise > span { text-transform: uppercase; }
+  .hero h1 { overflow-wrap: anywhere; }
+  .demo-card { grid-template-columns: minmax(0, 1.4fr) minmax(0, .7fr); }
+  .brand-navigation { margin-bottom: 3rem; }
+  .demo-card h2 { font-size: clamp(2.25rem, 4.5vw, 4rem); overflow-wrap: anywhere; }
+  .demo-card > div > .description, .demo-card > div > .example-note { font-size: 1rem; letter-spacing: normal; color: #a7b2c7; line-height: 1.7; }
+  .demo-card > div > .example-note { margin-top: 1.5rem; font-size: .85rem; }
+  .actions { flex-wrap: wrap; }
+  .actions a { display: inline-flex; align-items: center; justify-content: center; font-size: .9rem; line-height: 1.5; }
+  .product-links { display: flex; flex-wrap: wrap; gap: .8rem 1.3rem; margin-top: 1.5rem; }
+  .product-links a, .release-link, .preview a:not(.header-preview), .promise a { color: var(--cyan); text-decoration: underline; text-underline-offset: .25em; font-size: .85rem; line-height: 1.6; }
+  .product-links a:hover, .release-link:hover, .preview a:hover, .promise a:hover { color: var(--coral); }
+  .demo-card aside h3 { margin: 0 0 1rem; font-size: 1.25rem; }
+  .demo-card aside ul { padding-left: 1.2rem; margin: 0 0 1.5rem; color: #d7e1f0; font-size: .95rem; line-height: 1.7; }
+  .demo-card aside li + li { margin-top: .8rem; }
+  .demo-card aside li strong { display: inline; margin: 0; font-size: inherit; line-height: inherit; }
+  .demo-card aside p { margin: 0; color: #a7b2c7; font-size: .9rem; line-height: 1.7; }
+  .release-link { display: inline-block; margin-top: 1.5rem; }
+  .preview { max-width: calc(1320px - 4rem); margin: 0 auto 5rem; }
+  .preview-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .75rem; margin-bottom: 1rem; }
+  .preview h2 { font-size: 1.4rem; letter-spacing: -.025em; margin: 0; }
+  .header-preview { display: block; border: 1px solid var(--line); background: white; }
+  .header-preview img { display: block; width: 100%; height: auto; }
+  .header-preview:focus-visible { outline: 3px solid var(--cyan); outline-offset: 4px; }
+  .preview > p { color: #9daac1; font-size: .85rem; line-height: 1.6; }
+  .more-previews { display: inline-block; margin-top: .3rem; }
+  .discussionbridge > div > .eyebrow { color: var(--coral); }
+  .discussionbridge { margin-bottom: 5rem; }
+  @media (max-width: 1000px) {
+    header { flex-wrap: wrap; gap: 1.5rem; }
+    .header-navs { flex-wrap: wrap; }
+  }
+  @media (max-width: 760px) {
+    header { gap: 1.5rem; }
+    .header-navs { width: 100%; gap: 1rem; }
+    .header-navs nav:first-child { width: 100%; gap: .75rem; justify-content: space-between; }
+    .utility-navigation { gap: .55rem; }
+    .hero { padding-top: 4rem; padding-bottom: 3rem; }
+    .hero h1 { font-size: clamp(2.8rem, 11vw, 4rem); line-height: .95; }
+    .demo-card { grid-template-columns: 1fr; }
+    .demo-card > div, .demo-card aside { padding: 1.5rem; }
+    .preview { margin-inline: 1.2rem; margin-bottom: 3rem; }
+    .discussionbridge { margin-bottom: 3rem; }
+  }
+</style>
