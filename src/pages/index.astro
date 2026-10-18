@@ -25,7 +25,6 @@ const releaseUrl = "https://github.com/CodeWorksLabs/brand-navigation/releases/t
       <section class="hero">
         <p>Discourse demos</p>
         <h1>Community interfaces,<br /><em>shown in context.</em></h1>
-        <span>Explore live demos for Discourse.</span>
       </section>
 
       <section class="demo-card brand-navigation" aria-labelledby="brand-navigation-heading">
@@ -43,13 +42,9 @@ const releaseUrl = "https://github.com/CodeWorksLabs/brand-navigation/releases/t
             <a href="https://forum.codeworkslabs.dev/t/brand-navigation-roadmap/14">Roadmap</a>
           </nav>
         </div>
-        <aside aria-labelledby="try-heading">
-          <h3 id="try-heading">What to try</h3>
-          <ul>
-            <li>On CodeWorksLabs Forum, open <strong>Products</strong> to explore a dropdown menu.</li>
-            <li>Follow text links and social icons in the navigation bar and forum header.</li>
-            <li>Compare the layout on desktop and a phone, or rotate your phone.</li>
-          </ul>
+        <aside aria-labelledby="demonstrates-heading">
+          <h3 id="demonstrates-heading">What this demonstrates</h3>
+          <p>Branded navigation, dropdown menus, and text links and social icons in Discourse’s header, with layouts for desktop and mobile.</p>
           <a class="release-link" href={releaseUrl}>Available download: v1.0.0-rc.4 →</a>
         </aside>
       </section>
@@ -95,11 +90,12 @@ const releaseUrl = "https://github.com/CodeWorksLabs/brand-navigation/releases/t
   .hero > p, .eyebrow, .promise > span { text-transform: uppercase; }
   .hero h1 { overflow-wrap: anywhere; }
   .demo-card { grid-template-columns: minmax(0, 1.4fr) minmax(0, .7fr); }
+  .demo-card > div { display: flex; flex-direction: column; }
   .brand-navigation { margin-bottom: 3rem; }
   .demo-card h2 { font-size: clamp(2.25rem, 4.5vw, 4rem); overflow-wrap: anywhere; }
   .demo-card > div > .description, .demo-card > div > .example-note { font-size: 1rem; letter-spacing: normal; color: #a7b2c7; line-height: 1.7; }
   .demo-card > div > .example-note { margin-top: 1.5rem; font-size: .85rem; }
-  .actions { flex-wrap: wrap; }
+  .actions { flex-wrap: wrap; margin-top: auto; padding-top: 2rem; }
   .actions a { display: inline-flex; align-items: center; justify-content: center; font-size: .9rem; line-height: 1.5; }
   .product-links { display: flex; flex-wrap: wrap; gap: .8rem 1.3rem; margin-top: 1.5rem; }
   .product-links a, .release-link, .promise a { color: var(--cyan); text-decoration: underline; text-underline-offset: .25em; font-size: .85rem; line-height: 1.6; }
@@ -109,7 +105,7 @@ const releaseUrl = "https://github.com/CodeWorksLabs/brand-navigation/releases/t
   .demo-card aside li + li { margin-top: .8rem; }
   .demo-card aside li strong { display: inline; margin: 0; font-size: inherit; line-height: inherit; }
   .demo-card aside p { margin: 0; color: #a7b2c7; font-size: .9rem; line-height: 1.7; }
-  .release-link { display: inline-block; margin-top: 1.5rem; }
+  .release-link { display: inline-block; margin-top: auto; padding-top: 1.5rem; }
   .discussionbridge > div > .eyebrow { color: var(--coral); }
   .discussionbridge { margin-bottom: 5rem; }
   @media (max-width: 1000px) {
