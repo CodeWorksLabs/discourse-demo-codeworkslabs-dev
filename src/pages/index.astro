@@ -42,9 +42,17 @@ const releaseUrl = "https://github.com/CodeWorksLabs/brand-navigation/releases/t
             <a href="https://forum.codeworkslabs.dev/t/brand-navigation-roadmap/14">Roadmap</a>
           </nav>
         </div>
-        <aside aria-labelledby="demonstrates-heading">
-          <h3 id="demonstrates-heading">What this demonstrates</h3>
-          <p>Branded navigation, dropdown menus, and text links and social icons in Discourse’s header, with layouts for desktop and mobile.</p>
+        <aside aria-labelledby="demo-sites-heading">
+          <h3 id="demo-sites-heading">Demo sites</h3>
+          <ul>
+            <li><a href="https://forum.codeworkslabs.dev/">CodeWorksLabs Forum</a></li>
+            <li><a href="https://forum.discussionbridge.dev/">DiscussionBridge Forum</a></li>
+            <li><a href="https://bridge.demo.discussionbridge.dev/">The Bridge</a></li>
+            <li><a href="https://forum.repealobbba.org/">Repeal OBBBA Forum</a></li>
+            <li><a href="https://forum.citizenactivist.network/">Citizen Activist Network</a></li>
+            <li><a href="https://www.rving.community/">RVing Community</a></li>
+            <li><a href="https://www.r744.community/">R744 Community</a></li>
+          </ul>
           <a class="release-link" href={releaseUrl}>Available download: v1.0.0-rc.4 →</a>
         </aside>
       </section>
@@ -98,8 +106,8 @@ const releaseUrl = "https://github.com/CodeWorksLabs/brand-navigation/releases/t
   .actions { flex-wrap: wrap; margin-top: auto; padding-top: 2rem; }
   .actions a { display: inline-flex; align-items: center; justify-content: center; font-size: .9rem; line-height: 1.5; }
   .product-links { display: flex; flex-wrap: wrap; gap: .8rem 1.3rem; margin-top: 1.5rem; }
-  .product-links a, .release-link, .promise a { color: var(--cyan); text-decoration: underline; text-underline-offset: .25em; font-size: .85rem; line-height: 1.6; }
-  .product-links a:hover, .release-link:hover, .promise a:hover { color: var(--coral); }
+  .product-links a, .release-link, .promise a, .brand-navigation aside li a { color: var(--cyan); text-decoration: underline; text-underline-offset: .25em; font-size: .85rem; line-height: 1.6; }
+  .product-links a:hover, .release-link:hover, .promise a:hover, .brand-navigation aside li a:hover { color: var(--coral); }
   .demo-card aside h3 { margin: 0 0 1rem; font-size: 1.25rem; }
   .demo-card aside ul { padding-left: 1.2rem; margin: 0 0 1.5rem; color: #d7e1f0; font-size: .95rem; line-height: 1.7; }
   .demo-card aside li + li { margin-top: .8rem; }
