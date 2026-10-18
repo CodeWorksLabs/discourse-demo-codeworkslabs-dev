@@ -33,8 +33,7 @@ const releaseUrl = "https://github.com/CodeWorksLabs/brand-navigation/releases/t
           <p class="eyebrow">Brand Navigation · Live examples</p>
           <h2 id="brand-navigation-heading">Brand Navigation</h2>
           <p class="description">Add your brand, useful links and dropdown menus to Discourse, with optional text links and icons in the forum’s own header.</p>
-          <div class="actions"><a href="https://forum.codeworkslabs.dev/">Open CodeWorksLabs Forum ↗</a></div>
-          <p class="example-note">CodeWorksLabs Forum is our community.</p>
+          <div class="actions"><a href="https://codeworkslabs.dev/products/brand-navigation/">Explore Brand Navigation ↗</a></div>
           <nav class="product-links" aria-label="Brand Navigation resources">
             <a href="https://docs.codeworkslabs.dev/brand-navigation/install/">Install</a>
             <a href={releaseUrl}>RC4 download</a>
@@ -44,6 +43,16 @@ const releaseUrl = "https://github.com/CodeWorksLabs/brand-navigation/releases/t
             <a href="https://forum.codeworkslabs.dev/t/brand-navigation-roadmap/14">Roadmap</a>
           </nav>
         </div>
+        <aside aria-labelledby="try-heading">
+          <h3 id="try-heading">What to try</h3>
+          <ul>
+            <li>On CodeWorksLabs Forum, open <strong>Products</strong> to explore a dropdown menu.</li>
+            <li>Follow text links and social icons in the navigation bar and forum header.</li>
+            <li>Compare the layout on desktop and a phone, or rotate your phone.</li>
+          </ul>
+          <p>Each forum has its own configuration—not every option is demonstrated on every site.</p>
+          <a class="release-link" href={releaseUrl}>Available download: v1.0.0-rc.4 →</a>
+        </aside>
       </section>
 
       <section class="demo-card discussionbridge" aria-labelledby="discussionbridge-heading">
@@ -87,7 +96,7 @@ const releaseUrl = "https://github.com/CodeWorksLabs/brand-navigation/releases/t
   .hero > p, .eyebrow, .promise > span { text-transform: uppercase; }
   .hero h1 { overflow-wrap: anywhere; }
   .demo-card { grid-template-columns: minmax(0, 1.4fr) minmax(0, .7fr); }
-  .brand-navigation { margin-bottom: 3rem; grid-template-columns: 1fr; }
+  .brand-navigation { margin-bottom: 3rem; }
   .demo-card h2 { font-size: clamp(2.25rem, 4.5vw, 4rem); overflow-wrap: anywhere; }
   .demo-card > div > .description, .demo-card > div > .example-note { font-size: 1rem; letter-spacing: normal; color: #a7b2c7; line-height: 1.7; }
   .demo-card > div > .example-note { margin-top: 1.5rem; font-size: .85rem; }
