@@ -3,7 +3,6 @@ import "../styles.css";
 import SiteFooter from "../components/SiteFooter.astro";
 
 const releaseUrl = "https://github.com/CodeWorksLabs/brand-navigation/releases/tag/v1.0.0-rc.4";
-const headerPreview = "https://raw.githubusercontent.com/CodeWorksLabs/brand-navigation/v1.0.0-rc.4/docs/images/previews/the-bridge-header.jpg";
 ---
 
 <!doctype html>
@@ -11,7 +10,7 @@ const headerPreview = "https://raw.githubusercontent.com/CodeWorksLabs/brand-nav
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="description" content="Try Brand Navigation on real Discourse forums, see header previews and find installation guides. Explore DiscussionBridge’s independent demos too." />
+    <meta name="description" content="Explore live demos for Discourse." />
     <title>Discourse Demos — CodeWorksLabs</title>
   </head>
   <body>
@@ -25,8 +24,8 @@ const headerPreview = "https://raw.githubusercontent.com/CodeWorksLabs/brand-nav
     <main>
       <section class="hero">
         <p>Discourse demos</p>
-        <h1>Try the navigation.<br /><em>See what fits.</em></h1>
-        <span>Explore Brand Navigation on real Discourse forums. Try the menus, compare layouts and see how it could work for your community.</span>
+        <h1>Community interfaces,<br /><em>shown in context.</em></h1>
+        <span>Explore live demos for Discourse.</span>
       </section>
 
       <section class="demo-card brand-navigation" aria-labelledby="brand-navigation-heading">
@@ -34,8 +33,8 @@ const headerPreview = "https://raw.githubusercontent.com/CodeWorksLabs/brand-nav
           <p class="eyebrow">Brand Navigation · Live examples</p>
           <h2 id="brand-navigation-heading">Brand Navigation</h2>
           <p class="description">Add your brand, useful links and dropdown menus to Discourse, with optional text links and icons in the forum’s own header.</p>
-          <div class="actions"><a href="https://forum.codeworkslabs.dev/">Open CodeWorksLabs Forum ↗</a><a href="https://bridge.demo.discussionbridge.dev/">Explore The Bridge ↗</a></div>
-          <p class="example-note">CodeWorksLabs Forum is our community. The Bridge is independently operated by DiscussionBridge. These are live examples; navigation and content may change.</p>
+          <div class="actions"><a href="https://forum.codeworkslabs.dev/">Open CodeWorksLabs Forum ↗</a></div>
+          <p class="example-note">CodeWorksLabs Forum is our community.</p>
           <nav class="product-links" aria-label="Brand Navigation resources">
             <a href="https://docs.codeworkslabs.dev/brand-navigation/install/">Install</a>
             <a href={releaseUrl}>RC4 download</a>
@@ -45,25 +44,6 @@ const headerPreview = "https://raw.githubusercontent.com/CodeWorksLabs/brand-nav
             <a href="https://forum.codeworkslabs.dev/t/brand-navigation-roadmap/14">Roadmap</a>
           </nav>
         </div>
-        <aside aria-labelledby="try-heading">
-          <h3 id="try-heading">What to try</h3>
-          <ul>
-            <li>On CodeWorksLabs Forum, open <strong>Products</strong> to explore a dropdown menu.</li>
-            <li>Follow text links and social icons in the navigation bar and forum header.</li>
-            <li>Compare the layout on desktop and a phone, or rotate your phone.</li>
-          </ul>
-          <p>Each forum has its own configuration—not every option is demonstrated on every site.</p>
-          <a class="release-link" href={releaseUrl}>Available download: v1.0.0-rc.4 →</a>
-        </aside>
-      </section>
-
-      <section class="preview" aria-labelledby="preview-heading">
-        <div class="preview-heading"><h2 id="preview-heading">A look at The Bridge</h2><a href="https://bridge.demo.discussionbridge.dev/">Visit the live forum ↗</a></div>
-        <a class="header-preview" href={headerPreview} target="_blank" rel="noopener noreferrer" aria-label="Enlarge The Bridge header screenshot (opens in a new tab)">
-          <img src={headerPreview} alt="The Bridge showing Brand Navigation’s publishing dropdown menus, a Versions & Status text link and social icons in the forum header." width="1665" height="101" loading="lazy" />
-        </a>
-        <p>Desktop view, captured while signed in. Select the image to enlarge it in a new tab.</p>
-        <a class="more-previews" href="https://codeworkslabs.dev/products/brand-navigation/#previews">See more header examples and settings previews →</a>
       </section>
 
       <section class="demo-card discussionbridge" aria-labelledby="discussionbridge-heading">
@@ -75,9 +55,14 @@ const headerPreview = "https://raw.githubusercontent.com/CodeWorksLabs/brand-nav
           <nav class="product-links" aria-label="DiscussionBridge resources"><a href="https://docs.discussionbridge.dev/">Documentation</a><a href="https://docs.discussionbridge.dev/versions-and-live-status/">Versions and live status</a></nav>
         </div>
         <aside>
-          <h3>DiscussionBridge questions?</h3>
-          <p>Use its own community for support, feature requests and discussion.</p>
-          <a class="release-link" href="https://forum.discussionbridge.dev/">DiscussionBridge Forum →</a>
+            <span>Product owner</span>
+            <strong>DiscussionBridge</strong>
+            <span>Lifecycle role</span>
+            <strong>Original worked example</strong>
+            <span>Demonstrations</span>
+            <strong>Independent DiscussionBridge demo collection</strong>
+            <span>Documentation</span>
+            <strong>Canonical status and operational evidence remain in DiscussionBridge docs.</strong>
         </aside>
       </section>
 
@@ -102,29 +87,21 @@ const headerPreview = "https://raw.githubusercontent.com/CodeWorksLabs/brand-nav
   .hero > p, .eyebrow, .promise > span { text-transform: uppercase; }
   .hero h1 { overflow-wrap: anywhere; }
   .demo-card { grid-template-columns: minmax(0, 1.4fr) minmax(0, .7fr); }
-  .brand-navigation { margin-bottom: 3rem; }
+  .brand-navigation { margin-bottom: 3rem; grid-template-columns: 1fr; }
   .demo-card h2 { font-size: clamp(2.25rem, 4.5vw, 4rem); overflow-wrap: anywhere; }
   .demo-card > div > .description, .demo-card > div > .example-note { font-size: 1rem; letter-spacing: normal; color: #a7b2c7; line-height: 1.7; }
   .demo-card > div > .example-note { margin-top: 1.5rem; font-size: .85rem; }
   .actions { flex-wrap: wrap; }
   .actions a { display: inline-flex; align-items: center; justify-content: center; font-size: .9rem; line-height: 1.5; }
   .product-links { display: flex; flex-wrap: wrap; gap: .8rem 1.3rem; margin-top: 1.5rem; }
-  .product-links a, .release-link, .preview a:not(.header-preview), .promise a { color: var(--cyan); text-decoration: underline; text-underline-offset: .25em; font-size: .85rem; line-height: 1.6; }
-  .product-links a:hover, .release-link:hover, .preview a:hover, .promise a:hover { color: var(--coral); }
+  .product-links a, .release-link, .promise a { color: var(--cyan); text-decoration: underline; text-underline-offset: .25em; font-size: .85rem; line-height: 1.6; }
+  .product-links a:hover, .release-link:hover, .promise a:hover { color: var(--coral); }
   .demo-card aside h3 { margin: 0 0 1rem; font-size: 1.25rem; }
   .demo-card aside ul { padding-left: 1.2rem; margin: 0 0 1.5rem; color: #d7e1f0; font-size: .95rem; line-height: 1.7; }
   .demo-card aside li + li { margin-top: .8rem; }
   .demo-card aside li strong { display: inline; margin: 0; font-size: inherit; line-height: inherit; }
   .demo-card aside p { margin: 0; color: #a7b2c7; font-size: .9rem; line-height: 1.7; }
   .release-link { display: inline-block; margin-top: 1.5rem; }
-  .preview { max-width: calc(1320px - 4rem); margin: 0 auto 5rem; }
-  .preview-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .75rem; margin-bottom: 1rem; }
-  .preview h2 { font-size: 1.4rem; letter-spacing: -.025em; margin: 0; }
-  .header-preview { display: block; border: 1px solid var(--line); background: white; }
-  .header-preview img { display: block; width: 100%; height: auto; }
-  .header-preview:focus-visible { outline: 3px solid var(--cyan); outline-offset: 4px; }
-  .preview > p { color: #9daac1; font-size: .85rem; line-height: 1.6; }
-  .more-previews { display: inline-block; margin-top: .3rem; }
   .discussionbridge > div > .eyebrow { color: var(--coral); }
   .discussionbridge { margin-bottom: 5rem; }
   @media (max-width: 1000px) {
@@ -140,7 +117,6 @@ const headerPreview = "https://raw.githubusercontent.com/CodeWorksLabs/brand-nav
     .hero h1 { font-size: clamp(2.8rem, 11vw, 4rem); line-height: .95; }
     .demo-card { grid-template-columns: 1fr; }
     .demo-card > div, .demo-card aside { padding: 1.5rem; }
-    .preview { margin-inline: 1.2rem; margin-bottom: 3rem; }
     .discussionbridge { margin-bottom: 3rem; }
   }
 </style>
